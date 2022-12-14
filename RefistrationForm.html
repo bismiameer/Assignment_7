@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+
+
+        td {
+            padding: 0 15px;
+            text-align: left;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form align="center">
+            <table align="center" style="border:solid">
+                <tr>
+                    <td>
+                        <img src="regImage/image.png" style="width:120px;height:120px" />
+                    </td>
+                    <td>
+                        <h4 align="left" style="font-size:2em;color:red;"><b>Employee Registration Form</b></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="radio" value="Male" name="gender" id="male" />Mr.
+                        <input type="radio" value="Female" name="gender" id="female" />Mrs.
+                        <input type="radio" value="Female" name="gender" id="female" />Ms.
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>First Name</b></td>
+                    <td><input type="text" maxlength="50" id="uid" placeholder="FirstName" /> </td>
+                </tr>
+                <tr>
+                    <td><b>Last Name</b></td>
+                    <td><input type="text" id="uid" placeholder="LastName" /> </td>
+                </tr>
+                <tr>
+                    <td><b>Mail Address 1</b></td>
+                    <td><input type="text" id="uid" /> </td>
+                </tr>
+                <tr>
+                    <td><b>Mail Address 2</b></td>
+                    <td><input type="text" id="uid" /> </td>
+                </tr>
+                <tr>
+                    <td><b>City</b></td>
+                    <td><input type="text" id="uid" /> </td>
+                </tr>
+                <tr>
+                    <td><b>State</b></td>
+                    <td>
+                        <select>
+                            <option value=1>Gujarat</option>
+                            <option value=2>Kerala</option>
+                            <option value=3>Tamil Nadu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>ZIP Code </b></td>
+                    <td><input type="text" id="zip" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Upload Photo</b>
+                    </td>
+                    <td>
+                        <asp:FileUpload runat="server"></asp:FileUpload>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email  </b></td>
+                    <td><input type="text" id="email" /></td>
+                </tr>
+                <tr>
+                    <td><b>Mobile  </b></td>
+                    <td><input type="text" id="email" placeholder="+91" /></td>
+                </tr>
+                <tr>
+                    <td><b>Language Known</b>
+                    <td>
+                        <input type="checkbox" id="lang" />Gujarati<br />
+                        <input type="checkbox" id="lang" />Hindi<br />
+                        <input type="checkbox" id="lang" />English<br />
+                        <input type="checkbox" id="lang" />Marathi
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Additional Information</b></td>
+                    <td><textarea id="about" rows="5" cols="23" placeholder="Optional"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="90">
+                        <input type="button" value="Submit" style="margin-left: 198px;" />
+                        <input type="button" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

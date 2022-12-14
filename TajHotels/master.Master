@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Assignment_7.TajHotels.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../TajHotels/master.css">
+    <link rel="stylesheet" href="../TajHotels/ourteam.css">
+    <link rel="stylesheet" href="../TajHotels/contactus.css">
+
+     <header class="header">
+        <a href="#" class="logo">TAJ HOTEL</a>
+        <nav class="nav-items">
+            <a href="Home.aspx">Home</a>
+            <a href="Ourteam.aspx">Our Team</a>
+            <a href="Menu.aspx">Menu</a>
+            <a href="Gallery.aspx">Gallery</a>
+            <a href="Contact.aspx">Contact</a>
+        </nav>
+    </header>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="footer">
+        <div class="copy">&copy; 2022@CopyRight-Bismi Ameer:)</div>
+        <div class="bottom-links">
+            <div class="links">
+                <span>More Info</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="links">
+                <span>Connect With Us</span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+        </div>
+    </form>
+</body>
+</html>
